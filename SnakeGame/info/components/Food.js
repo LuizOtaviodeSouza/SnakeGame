@@ -1,13 +1,28 @@
 import { Text, View } from "react-native";
-import { BORDER, HEARDER_HEIGHT, PIXEL} from "../consts"
+import { BORDER, HEARDER_HEIGHT, PIXEL} from "../consts";
 
 const foodemojus = [
-
-
-    
+    "🍏",
+    "🍎",
+    "🍐",
+    "🍊",
+    "🍋",
+    "🍌",
+    "🍉",
+    "🍇",
+    "🍓",
+    "🫐",
+    "🍈",
+    "🍒",
+    "🍑",
+    "🥭",
+    "🍍",
+    "🥥",
+    "🥝",
+    "🍅",
 ];
 
-const Food = ({ coords, top }) = {
+const Food = ({ coords, top }) => {
     const randDomFood = foodemojus[Math.floor(Math.random() * foodemojus.length)];
     const foodStyle = {
         window: PIXEL,
@@ -16,7 +31,7 @@ const Food = ({ coords, top }) = {
         left: coords.x * PIXEL + BORDER,
     };
     return (
-        <View style={[{ positiom: "absolute" }, foodStyle]}>
+        <View style={[{ position: "absolute" }, foodStyle]}>
          <Text>{randDomFood}</Text>
          </View>
     );
