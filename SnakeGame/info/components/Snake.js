@@ -4,7 +4,7 @@ import { colors } from "../styles/theme";
 import {
     BORDER,
     BORDER_RADIUS,
-    FAP,
+    GAP,
     HEADER_HEIGHT,
     PIXEL,
     SPEED,
@@ -14,7 +14,7 @@ const Snake = ({ snake, top }) => {
     return (
         <>
         {snake.map((node, index) => {
-            const nodeStyles = {
+            const nodeStyle = {
                 width: PIXEL,
                 height: PIXEL,
                 borderWidth: GAP,

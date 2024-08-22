@@ -77,7 +77,6 @@ const Game = () => {
         }
     
 
-
 function moveSnake() {
     const head = { ...snake[0] };
 
@@ -99,7 +98,7 @@ function moveSnake() {
     }
 }
 if (testGameOver(head)) {
-    setIsGa,eOver(true);
+    setIsGameOver(true);
     Haptics.notificationAsync(Haptics.NotificationFeedbackTypre.Error);
     return;
 }
@@ -152,6 +151,7 @@ return (
         </SafeAreaView>
     </PanGestureHandler>
     )
+ 
     const styles = StyleSheet.create({
         container: {
             backgrondColor: colors.p6,
